@@ -1,0 +1,70 @@
+Các Extention cài đặt hỗ trợ trong quá trình học Web
+	Extention Chrome
+		- Show side panel
+		- Page ruler
+	Extention Vs-Code
+		- Bracket Pair Colorizer
+		- vscode-icons
+		- Prettier
+		- Code formatter
+		- Live Server
+		- IntelliCode
+		- Code Spell Checker
+		- Tabnine
+Tổ chức file hiệu quả khi sử dụng
+	.template___
+	|			|
+	|			.assets_
+	|			|		|__.images
+	|			|		|__.media	
+	|			|
+	|			.static_
+	|					|_.css______ _.base
+	|					|__.js		|_.compoments
+	|					|__.fonts	|_.layout
+	|								|_.vendors
+	|								|_.page
+	|								|_.helpers
+	.index.html
+	Giải thích ý nghĩa 1 số thư mục:
+		.assets:
+			Thư mục lưu những tài nguyên ảnh, video, ...
+		.static:
+			Thư mục lưu những file tỉnh không tương tác với sever
+		.base:
+			Thư mục là nơi lưu trữ các file css cơ bản, cần đảm bảo các trình duyệt hiển thị giống nhau Ex: reset, typography, utilities, animation.
+		.commponents:
+			Nơi chứa các thành phần như: Button, Form, Popup, Nav, ...
+		.layout:
+			Nơi chứa các thành phần chính của trang như: header, footer, navigation, section
+		.helpers: 
+			Nơi chứa các function, variable, mixin
+		.pages: 
+			Nơi chưa những phần khác nhau của mỗi page, nếu mỗi page có đặc điểm khác nhau bạn sẽ code ở đây
+		.vendors:
+			Nơi chứa các bên thứ 3 ( third party ) như Bootstrap, Font Awesome... những phần mà không phải bạn code
+Giới thiệu ngôn ngữ HTML
+	HTML viết tắt:
+		Hyper Text Markup Language
+	HTML là gì?
+		Ngôn ngữ  đánh dấusiêu văn bản
+	Siêu văn bản là gì?
+		Siêu văn bản là chứa văn bản, âm thanh, hình ảnh, video, ... , backlink, link.
+Cấu trúc HTML cơ bản
+	<!DOCTYPE html>
+	<html lang="en">
+	    <head>
+	        <!-- Các thẻ meta ở đây -->
+	    </head>
+	    <body>
+        	<!-- Nội dung trang web ở đây -->
+    	</body>
+	</html>
+Sơ lược thẻ trong phần cấu trúc chính của Web
+	Thẻ bao gồm những gì?
+		1 thẻ đóng và 1 thẻ mở
+		Vd: <html></html>
+	Giới thiệu thẻ <!Doctype html>
+		Ý nghĩa: Thẻ này có tác dụng khai báo kiểu tài liệu HTML
+	Kiểu ngôn ngữ cho web đó:
+		<html lang="vie">
